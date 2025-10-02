@@ -1,0 +1,9 @@
+fastf1
+numpy
+pandas
+scipy
+scikit-learn
+pytest
+black
+flake8
+isort

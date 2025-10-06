@@ -7,4 +7,3 @@ pytest
 black
 jupyter-black
 flake8
-isort

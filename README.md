@@ -38,8 +38,8 @@ Se emplearán datos históricos de Fórmula 1 (FastF1, Ergast API), incluyendo t
 5. Interfaz de visualización para comparación de planes.  
 
 ## 🧹 Clean code
-1. Black para formatear código
-2. flake8 para analizar la calidad de código y evitar codeSmells
+1. Black para formatear código (black src tests notebooks)
+2. flake8 para analizar la calidad de código y evitar codeSmells (flake8 src tests notebooks)
 
 ## 👨‍💻 Autor
 Jorge Galiano García

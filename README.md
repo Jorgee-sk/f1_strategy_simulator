@@ -37,6 +37,10 @@ Se emplearán datos históricos de Fórmula 1 (FastF1, Ergast API), incluyendo t
 4. Búsqueda de estrategias con GA y DP.  
 5. Interfaz de visualización para comparación de planes.  
 
+## 🧹 Clean code
+1. Black para formatear código
+2. isort para reordenar imports en ficheros
+3. flake8 para analizar la calidad de código y evitar codeSmells
 
 ## 👨‍💻 Autor
 Jorge Galiano García

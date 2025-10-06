@@ -11,8 +11,7 @@ import pytest
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
 
 # --- Resto de imports ---
-from basic_lap_time import (load_driver_laps, time_delta_to_str,
-                            validate_fast_f1_Request)
+from basic_lap_time import load_driver_laps, time_delta_to_str, validate_fast_f1_Request
 
 # ---------- TESTS PARA time_delta_to_str ----------
 

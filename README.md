@@ -39,8 +39,7 @@ Se emplearán datos históricos de Fórmula 1 (FastF1, Ergast API), incluyendo t
 
 ## 🧹 Clean code
 1. Black para formatear código
-2. isort para reordenar imports en ficheros
-3. flake8 para analizar la calidad de código y evitar codeSmells
+2. flake8 para analizar la calidad de código y evitar codeSmells
 
 ## 👨‍💻 Autor
 Jorge Galiano García

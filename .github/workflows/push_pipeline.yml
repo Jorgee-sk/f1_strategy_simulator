@@ -27,9 +27,6 @@ jobs:
       - name: Run format (Black)
         run: black --check src tests
 
-      - name: Run import sort (isort)
-        run: isort --check-only src tests
-
       - name: Run lint (Flake8)
         run: flake8 src tests
 

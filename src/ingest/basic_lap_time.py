@@ -1,7 +1,6 @@
 import argparse
 
 import fastf1
-import pandas as pd
 
 from src.utils.date_utils import time_delta_to_str
 

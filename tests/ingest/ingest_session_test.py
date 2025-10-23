@@ -1,3 +1,4 @@
+# flake8: noqa: E402
 import os
 import sys
 import pytest
@@ -77,7 +78,7 @@ def test_ingest_session_success(mock_get_session, mock_session, tmp_path):
     # Verifica que se llamó a load()
     mock_session.load.assert_called_once()
 
-    # Verifica que el DataFrame devuelto es el esperado (después de conversión de tiempos)
+    # Verifica que el DataFrame devuelto es el esperado
     expected_laps = mock_session.laps.copy()
     time_cols = ["LapTime", "Sector1Time", "Sector2Time", "Sector3Time"]
     for col in time_cols:

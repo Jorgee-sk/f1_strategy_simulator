@@ -45,7 +45,7 @@ def ingest_session(
         ]
     ].copy()
 
-    # Convertir tiempos a timedelta para consistencia (opcional, pero útil para cálculos)
+    # Convertir tiempos a timedelta para consistencia
     time_cols = ["LapTime", "Sector1Time", "Sector2Time", "Sector3Time"]
     for col in time_cols:
         laps[col] = laps[col].apply(time_delta_to_str)

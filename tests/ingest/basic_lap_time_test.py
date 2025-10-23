@@ -1,37 +1,16 @@
 # flake8: noqa: E402
 import os
 import sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from datetime import timedelta
 from unittest.mock import MagicMock, patch
 
 import pandas as pd
 import pytest
 
-# --- Añadir src al path antes de cualquier otro import ---
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
-
 # --- Resto de imports ---
-from basic_lap_time import load_driver_laps, time_delta_to_str, validate_fast_f1_Request
-
-# ---------- TESTS PARA time_delta_to_str ----------
-
-
-def test_time_delta_to_str_normal_case():
-    td = timedelta(minutes=1, seconds=19, microseconds=104000)
-    result = time_delta_to_str(td)
-    assert result == "1:19:104"
-
-
-def test_time_delta_to_str_zero_time():
-    td = timedelta(0)
-    result = time_delta_to_str(td)
-    assert result == "0:00:000"
-
-
-def test_time_delta_to_str_none():
-    result = time_delta_to_str(None)
-    assert result is None
-
+from src.ingest.basic_lap_time import load_driver_laps, validate_fast_f1_Request
 
 # ---------- TESTS PARA validate_fast_f1_Request ----------
 
@@ -53,8 +32,8 @@ def test_validate_fast_f1_request_invalid_year():
 # ---------- TESTS PARA load_driver_laps ----------
 
 
-@patch("basic_lap_time.fastf1.get_session")
-@patch("basic_lap_time.pd.DataFrame.to_csv")
+@patch("src.ingest.basic_lap_time.fastf1.get_session")
+@patch("src.ingest.basic_lap_time.pd.DataFrame.to_csv")
 def test_load_driver_laps(mock_to_csv, mock_get_session):
     # --- Preparar mocks ---
     # Simula un objeto "laps" con columnas necesarias

@@ -7,3 +7,4 @@ pytest
 black
 jupyter-black
 flake8
+seaborn

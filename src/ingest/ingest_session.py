@@ -42,6 +42,10 @@ def ingest_session(
             "SpeedST",
             "Position",
             "IsPersonalBest",
+            "Stint",
+            "PitOutTime",
+            "PitInTime",
+            "Deleted"
         ]
     ].copy()
 

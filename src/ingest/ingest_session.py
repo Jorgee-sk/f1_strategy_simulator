@@ -45,7 +45,7 @@ def ingest_session(
             "Stint",
             "PitOutTime",
             "PitInTime",
-            "Deleted"
+            "Deleted",
         ]
     ].copy()
 
